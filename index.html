@@ -82,7 +82,16 @@
                 <li><a href="#contact" class="btn btn-outline nav-link-item" style="padding: 8px 16px;"
                         data-page="contact">Contact</a></li>
             </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="mobile-toggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
         </div>
+        <div class="nav-backdrop" id="nav-backdrop"></div>
     </nav>
 
     <!-- Main Page Container -->
@@ -110,6 +119,14 @@
             <!-- Brands Marquee -->
             <div class="brand-marquee" id="brand-marquee">
                 <div class="brand-track" id="brand-track">
+                    <span class="brand-item">HEIDELBERG</span>
+                    <span class="brand-item">KOMORI</span>
+                    <span class="brand-item">BOBST</span>
+                    <span class="brand-item">POLAR</span>
+                    <span class="brand-item">STAHL</span>
+                    <span class="brand-item">MULLER MARTINI</span>
+                    <span class="brand-item">KBA</span>
+                    <!-- Duplicate for seamless loop -->
                     <span class="brand-item">HEIDELBERG</span>
                     <span class="brand-item">KOMORI</span>
                     <span class="brand-item">BOBST</span>
@@ -184,8 +201,7 @@
                         </div>
 
                         <!-- Right: Stats / Visuals -->
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3);"
-                            id="about-stats-container">
+                        <div class="about-stats-grid" id="about-stats-container">
                             <div class="glass"
                                 style="padding: var(--space-4); text-align: center; border-radius: 8px; display: flex; flex-direction: column; justify-content: center;">
                                 <span

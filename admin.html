@@ -220,6 +220,8 @@
             margin-bottom: var(--s-8);
             font-weight: 700;
             letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
         }
 
         .nav-item {
@@ -496,7 +498,94 @@
             max-width: 100%;
             max-height: 90vh;
             overflow-y: auto;
-            padding: var(--s-8);
+            padding: var(--s-6);
+            /* Reduced padding for mobile */
+            display: flex;
+            flex-direction: column;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        @media (max-width: 1024px) {
+            .admin-sidebar {
+                position: fixed;
+                left: -280px;
+                top: 0;
+                bottom: 0;
+                z-index: 5000;
+                margin: 0;
+                border-radius: 0;
+                transition: var(--transition-smooth);
+            }
+
+            .admin-sidebar.mobile-active {
+                left: 0;
+            }
+
+            .mobile-close-btn {
+                display: block !important;
+            }
+
+            .admin-sidebar-overlay {
+                display: none;
+                position: fixed;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.6);
+                backdrop-filter: blur(4px);
+                z-index: 4999;
+            }
+
+            .admin-sidebar-overlay.active {
+                display: block;
+            }
+
+            .admin-main-wrapper {
+                padding: 0;
+            }
+
+            .admin-mobile-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: var(--s-4) var(--s-6);
+                background: var(--bg-deep);
+                border-bottom: 1px solid var(--glass-border);
+                position: sticky;
+                top: 0;
+                z-index: 100;
+            }
+        }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--s-6);
+        }
+
+        @media (max-width: 1024px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start !important;
+                gap: var(--s-4);
+            }
+
+            header h1 {
+                font-size: 1.5rem !important;
+            }
         }
 
         /* Action Menu Dropdown */
@@ -597,12 +686,89 @@
             }
         }
 
-        /* Accessibility: Reduced Motion */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation: none !important;
-                transition: none !important;
+        @media (max-width: 1024px) {
+            body {
+                flex-direction: column;
+                overflow-y: auto;
             }
+
+            .admin-sidebar {
+                position: fixed;
+                left: -280px;
+                top: 0;
+                bottom: 0;
+                z-index: 5000;
+                margin: 0;
+                border-radius: 0;
+                transition: var(--transition-smooth);
+            }
+
+            .admin-sidebar.mobile-active {
+                left: 0;
+            }
+
+            .admin-main-wrapper {
+                padding: var(--s-4);
+            }
+
+            .admin-container {
+                overflow-y: visible;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-content {
+                padding: var(--s-4);
+            }
+
+            .modal-content form>div {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* Mobile Header */
+        .admin-mobile-header {
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--s-4);
+            background: var(--glass-surface);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+            margin-bottom: var(--s-4);
+            border-radius: var(--radius-md);
+        }
+
+        @media (max-width: 1024px) {
+            .admin-mobile-header {
+                display: flex;
+            }
+        }
+
+        .mobile-menu-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            color: white;
+            padding: 8px;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+        }
+
+        /* Responsive Tables */
+        .card {
+            overflow-x: auto;
+        }
+
+        table {
+            min-width: 600px;
         }
     </style>
 </head>
@@ -689,9 +855,25 @@
         </div>
     </div>
 
+    <!-- Sidebar Overlay -->
+    <div class="admin-sidebar-overlay" id="sidebar-overlay"
+        onclick="document.querySelector('.admin-sidebar').classList.remove('mobile-active'); this.classList.remove('active');">
+    </div>
+
     <!-- Sidebar -->
     <div class="glass admin-sidebar" style="position: relative; z-index: 10;">
-        <div class="logo-text">MD<span style="color: var(--accent-primary);">Admin</span></div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--s-8);">
+            <div class="logo-text" style="margin-bottom: 0;">MD<span style="color: var(--accent-primary);">Admin</span>
+            </div>
+            <button class="mobile-close-btn"
+                style="display: none; background: transparent; border: none; color: white; cursor: pointer;"
+                onclick="document.querySelector('.admin-sidebar').classList.remove('mobile-active'); document.getElementById('sidebar-overlay').classList.remove('active');">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
 
         <nav style="flex: 1;">
             <div onclick="window.adminManager.switchView('inventory')" id="nav-inventory" class="nav-item active">
@@ -789,6 +971,18 @@
 
     <!-- Main Content Wrapper -->
     <div class="admin-main-wrapper" style="position: relative; z-index: 10;">
+        <div class="admin-mobile-header">
+            <div class="logo-text" style="margin-bottom: 0; font-size: 1.25rem;">MD<span
+                    style="color: var(--accent-primary);">Admin</span></div>
+            <button class="mobile-menu-btn"
+                onclick="document.querySelector('.admin-sidebar').classList.toggle('mobile-active'); document.getElementById('sidebar-overlay').classList.toggle('active');">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
         <div class="admin-container">
             <!-- Page Header -->
             <header
@@ -1020,7 +1214,7 @@
                     <!-- Populated by JS -->
                 </div>
 
-                <div class="charts-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-6);">
+                <div class="charts-grid">
                     <div class="card" style="height: 400px; display: flex; flex-direction: column;">
                         <h3 style="margin-bottom: var(--s-4);">Inventory Momentum</h3>
                         <div style="flex: 1; min-height: 0;">
@@ -1372,11 +1566,12 @@
                     </div>
                 </div>
 
-                <div style="margin-top: var(--s-6); display: flex; gap: var(--s-3);">
+                <div class="modal-footer"
+                    style="margin-top: var(--s-6); display: flex; gap: var(--s-3); position: sticky; bottom: 0; background: var(--bg-deep); padding-top: var(--s-4); border-top: 1px solid var(--glass-border);">
                     <button type="button" class="btn-admin btn-outline"
-                        style="color: var(--danger); border-color: rgba(239, 68, 68, 0.4);"
+                        style="color: var(--danger); border-color: rgba(239, 68, 68, 0.4); flex: 1;"
                         onclick="document.getElementById('admin-modal').style.display='none'">Cancel</button>
-                    <button type="submit" class="btn-admin">Confirm Changes</button>
+                    <button type="submit" class="btn-admin" style="flex: 2;">Confirm Changes</button>
                 </div>
             </form>
         </div>
@@ -1417,10 +1612,12 @@
                     </div>
                     <div id="preview-news-picture" style="margin-top: 10px;"></div>
                 </div>
-                <div style="margin-top: var(--s-6); display: flex; gap: var(--s-3);">
+                <div class="modal-footer"
+                    style="margin-top: var(--s-6); display: flex; gap: var(--s-3); position: sticky; bottom: 0; background: var(--bg-deep); padding-top: var(--s-4); border-top: 1px solid var(--glass-border); z-index: 10;">
                     <button type="button" class="btn-admin btn-outline"
-                        onclick="document.getElementById('news-modal').style.display='none'">Dismiss</button>
-                    <button type="submit" class="btn-admin">Save Publication</button>
+                        onclick="document.getElementById('news-modal').style.display='none'"
+                        style="flex: 1;">Dismiss</button>
+                    <button type="submit" class="btn-admin" style="flex: 2;">Save Publication</button>
                 </div>
             </form>
         </div>
@@ -1496,10 +1693,12 @@
                     </div>
                     <textarea id="blog-body" style="display: none;"></textarea>
                 </div>
-                <div style="margin-top: var(--s-6); display: flex; gap: var(--s-3);">
+                <div class="modal-footer"
+                    style="margin-top: var(--s-6); display: flex; gap: var(--s-3); position: sticky; bottom: 0; background: var(--bg-deep); padding-top: var(--s-4); border-top: 1px solid var(--glass-border); z-index: 10;">
                     <button type="button" class="btn-admin btn-outline"
-                        onclick="document.getElementById('blogs-modal').style.display='none'">Cancel</button>
-                    <button type="submit" class="btn-admin">Push Updates</button>
+                        onclick="document.getElementById('blogs-modal').style.display='none'"
+                        style="flex: 1;">Cancel</button>
+                    <button type="submit" class="btn-admin" style="flex: 2;">Push Updates</button>
                 </div>
             </form>
         </div>
@@ -1533,10 +1732,12 @@
                         </select>
                     </div>
                 </div>
-                <div style="margin-top: var(--s-6); display: flex; gap: var(--s-3);">
+                <div class="modal-footer"
+                    style="margin-top: var(--s-6); display: flex; gap: var(--s-3); position: sticky; bottom: 0; background: var(--bg-deep); padding-top: var(--s-4); border-top: 1px solid var(--glass-border); z-index: 10;">
                     <button type="button" class="btn-admin btn-outline"
-                        onclick="document.getElementById('videos-modal').style.display='none'">Discard</button>
-                    <button type="submit" class="btn-admin">Apply</button>
+                        onclick="document.getElementById('videos-modal').style.display='none'"
+                        style="flex: 1;">Discard</button>
+                    <button type="submit" class="btn-admin" style="flex: 2;">Apply</button>
                 </div>
             </form>
         </div>
@@ -1583,10 +1784,12 @@
                     </div>
                     <div id="preview-staff-image" style="margin-top: 10px;"></div>
                 </div>
-                <div style="margin-top: var(--s-6); display: flex; gap: var(--s-3);">
+                <div class="modal-footer"
+                    style="margin-top: var(--s-6); display: flex; gap: var(--s-3); position: sticky; bottom: 0; background: var(--bg-deep); padding-top: var(--s-4); border-top: 1px solid var(--glass-border); z-index: 10;">
                     <button type="button" class="btn-admin btn-outline"
-                        onclick="document.getElementById('staff-modal').style.display='none'">Cancel</button>
-                    <button type="submit" class="btn-admin">Save Details</button>
+                        onclick="document.getElementById('staff-modal').style.display='none'"
+                        style="flex: 1;">Cancel</button>
+                    <button type="submit" class="btn-admin" style="flex: 2;">Save Details</button>
                 </div>
             </form>
         </div>
@@ -1639,10 +1842,12 @@
                     </div>
                 </div>
 
-                <div style="margin-top: var(--s-6); display: flex; gap: var(--s-3);">
+                <div class="modal-footer"
+                    style="margin-top: var(--s-6); display: flex; gap: var(--s-3); position: sticky; bottom: 0; background: var(--bg-deep); padding-top: var(--s-4); border-top: 1px solid var(--glass-border); z-index: 10;">
                     <button type="button" class="btn-admin btn-outline"
-                        onclick="document.getElementById('bulk-modal').style.display='none'">Cancel</button>
-                    <button type="submit" class="btn-admin">Apply to Selection</button>
+                        onclick="document.getElementById('bulk-modal').style.display='none'"
+                        style="flex: 1;">Cancel</button>
+                    <button type="submit" class="btn-admin" style="flex: 2;">Apply to Selection</button>
                 </div>
             </form>
         </div>
@@ -1670,10 +1875,12 @@
                         <input type="text" id="news-bulk-month" class="form-input" placeholder="-- No Change --">
                     </div>
                 </div>
-                <div style="margin-top: var(--s-6); display: flex; gap: var(--s-3);">
+                <div class="modal-footer"
+                    style="margin-top: var(--s-6); display: flex; gap: var(--s-3); position: sticky; bottom: 0; background: var(--bg-deep); padding-top: var(--s-4); border-top: 1px solid var(--glass-border); z-index: 10;">
                     <button type="button" class="btn-admin btn-outline"
-                        onclick="document.getElementById('news-bulk-modal').style.display='none'">Dismiss</button>
-                    <button type="submit" class="btn-admin">Apply Changes</button>
+                        onclick="document.getElementById('news-bulk-modal').style.display='none'"
+                        style="flex: 1;">Dismiss</button>
+                    <button type="submit" class="btn-admin" style="flex: 2;">Apply Changes</button>
                 </div>
             </form>
         </div>

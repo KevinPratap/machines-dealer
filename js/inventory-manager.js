@@ -178,7 +178,9 @@ class InventoryManager {
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
                 <span style="color: var(--accent-primary); font-weight: 700; font-size: 0.75rem; opacity: 0.8;">#${machine.id}</span>
-                <button onclick="window.inventoryManager.inquireMachine('${machine.id}', '${machine.manufacturer || ''}', '${machine.type || ''}')" class="btn btn-outline machine-btn" style="padding: 6px 12px; font-size: 0.75rem;">Inquiry</button>
+                <button onclick="window.inventoryManager.inquireMachine('${machine.id}', '${machine.manufacturer || ''}', '${machine.type || ''}')" 
+                        class="btn btn-primary machine-btn" 
+                        style="padding: 8px 16px; font-size: 0.75rem;">Contact for Details</button>
             </div>
         `;
 

@@ -46,6 +46,32 @@ const ContentManager = {
         this.applyGlobalSettings();
         this.isLoaded = true;
 
+        // Initialize Mobile Menu
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (mobileToggle && navLinks) {
+            const backdrop = document.getElementById('nav-backdrop');
+
+            const toggleMenu = () => {
+                const isActive = navLinks.classList.toggle('active');
+                if (backdrop) backdrop.classList.toggle('active', isActive);
+                document.body.style.overflow = isActive ? 'hidden' : '';
+            };
+
+            mobileToggle.addEventListener('click', toggleMenu);
+            if (backdrop) backdrop.addEventListener('click', toggleMenu);
+
+            // Close menu when a link is clicked
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    if (backdrop) backdrop.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+
         // Handle browser back/forward
         window.addEventListener('popstate', (e) => {
             if (e.state && e.state.page) {

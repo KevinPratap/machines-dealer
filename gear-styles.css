@@ -16,17 +16,23 @@
 }
 
 .gear-top-left {
-    top: -15%;
-    left: -15%;
-    width: 600px;
-    height: 600px;
+    top: -10%;
+    left: -10%;
+    width: 35vw;
+    height: 35vw;
+    max-width: 600px;
+    max-height: 600px;
+    opacity: 0.15;
 }
 
 .gear-bottom-right {
-    bottom: -15%;
-    right: -15%;
-    width: 500px;
-    height: 500px;
+    bottom: -10%;
+    right: -10%;
+    width: 30vw;
+    height: 30vw;
+    max-width: 500px;
+    max-height: 500px;
+    opacity: 0.15;
 }
 
 .gear-main {
@@ -37,12 +43,16 @@
 
 @media (max-width: 768px) {
     .gear-top-left {
-        width: 400px;
-        height: 400px;
+        width: 60vw;
+        height: 60vw;
+        top: -5%;
+        left: -15%;
     }
 
     .gear-bottom-right {
-        width: 350px;
-        height: 350px;
+        width: 50vw;
+        height: 50vw;
+        bottom: -5%;
+        right: -15%;
     }
 }
