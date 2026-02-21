@@ -624,31 +624,33 @@ h6 {
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: 0;
         width: 85%;
         max-width: 300px;
         height: 100vh;
         background: rgba(15, 18, 24, 0.98) !important;
-        /* Denser background for better blur contrast */
-        backdrop-filter: blur(15px);
-        /* Increased blur */
-        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         flex-direction: column;
-        padding: 100px var(--space-2) var(--space-4);
-        /* Increased top padding */
-        transition: var(--transition-smooth, 0.4s cubic-bezier(0.165, 0.84, 0.44, 1));
+        padding: 100px var(--space-2) 120px;
+        /* Increased bottom padding for phone safe areas */
+        transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transform: translateX(100%);
         box-shadow: -15px 0 40px rgba(0, 0, 0, 0.6);
         z-index: 1010;
-        /* Clear everything else */
         gap: 0;
-        /* Changed to 0 as links have internal padding */
         align-items: stretch;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .nav-links.active {
-        right: 0;
-        animation: slideInMenu 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transform: translateX(0);
+    }
+
+    /* Hide floating stuff when menu is active to avoid click blocking */
+    body.menu-open .whatsapp-float {
+        display: none !important;
     }
 
     @keyframes slideInMenu {

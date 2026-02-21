@@ -56,6 +56,7 @@ const ContentManager = {
             const toggleMenu = () => {
                 const isActive = navLinks.classList.toggle('active');
                 if (backdrop) backdrop.classList.toggle('active', isActive);
+                document.body.classList.toggle('menu-open', isActive);
                 document.body.style.overflow = isActive ? 'hidden' : '';
             };
 
