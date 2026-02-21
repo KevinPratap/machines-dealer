@@ -1,0 +1,252 @@
+[
+    {
+        "id": 1771209698291,
+        "year": "2024",
+        "month": "10",
+        "news_detail": "AuditTest news item details",
+        "picture": "",
+        "video_url": null,
+        "created_at": "2026-02-16T02:41:38.291Z",
+        "updated_at": "2026-02-16T02:41:38.291Z"
+    },
+    {
+        "id": 1771209691124,
+        "year": "2024",
+        "month": "10",
+        "news_detail": "AuditTest news item details",
+        "picture": "",
+        "video_url": null,
+        "created_at": "2026-02-16T02:41:31.124Z",
+        "updated_at": "2026-02-16T02:41:31.124Z"
+    },
+    {
+        "id": 1771209668704,
+        "year": "2024",
+        "month": "10",
+        "news_detail": "AuditTest news item details",
+        "picture": "",
+        "video_url": null,
+        "created_at": "2026-02-16T02:41:08.704Z",
+        "updated_at": "2026-02-16T02:41:08.704Z"
+    },
+    {
+        "id": 20,
+        "news_detail": "DRUPA (Germany) - Machinesdealer people at drupa .\r\nVery productive and learning exibition for the printing industry.",
+        "year": "2008",
+        "month": "5",
+        "picture": "1629187537.png",
+        "video_url": null,
+        "created_at": "2021-03-12 17:39:32",
+        "updated_at": "2021-08-17 02:35:37"
+    },
+    {
+        "id": 26,
+        "news_detail": "PRINT PACK  (New Delhi) -\r\n\r\na totall flop show with no known or big brands and no new techonlogy",
+        "year": "2009",
+        "month": "1",
+        "picture": "",
+        "video_url": null,
+        "created_at": "2009-10-22 23:40:15",
+        "updated_at": null
+    },
+    {
+        "id": 27,
+        "news_detail": "IPEX (Mumbai)  - Machinesdealer stall at IPEX",
+        "year": "2009",
+        "month": "10",
+        "picture": "",
+        "video_url": null,
+        "created_at": "2009-10-22 23:39:07",
+        "updated_at": null
+    },
+    {
+        "id": 32,
+        "news_detail": "Machinesdealer @ PAMEX was a grand exhibition with HEIDELBERG taking part after a long while. Our company had the best looking stall ( voted amongst the dealers) . Great exebition , good business.",
+        "year": "2010",
+        "month": "1",
+        "picture": "mainp32.jpg",
+        "video_url": null,
+        "created_at": "2012-08-26 23:29:31",
+        "updated_at": null
+    },
+    {
+        "id": 33,
+        "news_detail": "Machinesdealer @ Pamex 2011\r\nVisit us at PAMEX 2011\r\nHall No.: 6\r\nStall No.: 6265\r\nDate: Tues. 1st to Fri. 4th November, 2011\r\nVenue: Pragati Maidan, New Delhi",
+        "year": "2011",
+        "month": "10",
+        "picture": "mainp33.jpg",
+        "video_url": null,
+        "created_at": "2012-08-26 23:28:52",
+        "updated_at": null
+    },
+    {
+        "id": 34,
+        "news_detail": "Machinesdealer @ PRINT PACK SIGN DIGITAL 2012\r\nVenue: Sanskar Kendra, Paldi, Ahmedabad, Gujrat\r\nDate:   20th January 2012 to 22nd January 2012\r\nStall No.: E - 35 - 36 TO 49 - 50",
+        "year": "2012",
+        "month": "1",
+        "picture": "",
+        "video_url": null,
+        "created_at": "2012-08-26 23:28:39",
+        "updated_at": null
+    },
+    {
+        "id": 35,
+        "news_detail": "Machinesdealer @ INTER PRINT EXPO 2012 from 14th to 16th september . We Have Machinery On Display .",
+        "year": "2012",
+        "month": "9",
+        "picture": "",
+        "video_url": null,
+        "created_at": "2012-08-26 23:28:15",
+        "updated_at": null
+    },
+    {
+        "id": 36,
+        "news_detail": "Our participation in Print Pack India 2013.",
+        "year": "2013",
+        "month": "2",
+        "picture": "mainp36.jpg",
+        "video_url": null,
+        "created_at": "2014-02-02 22:09:18",
+        "updated_at": null
+    },
+    {
+        "id": 39,
+        "news_detail": "machinesdealer@InterPrint Expo 2014 Ludhiana.\r\nPlease visit at our stall, from 10 October to 13 October 2014",
+        "year": "2014",
+        "month": "10",
+        "picture": "mainp39.jpg",
+        "video_url": null,
+        "created_at": "2014-11-24 21:59:58",
+        "updated_at": null
+    },
+    {
+        "id": 40,
+        "news_detail": "machinesdealer@PRINTPACK INDIA 2015 11th - 15th February, 2015, India Expo Centre & Mart, Greater Noida, Delhi NCR, INDIA Biggest Printing & Packaging Show in INDIA",
+        "year": "2015",
+        "month": "2",
+        "picture": "mainp40.jpg",
+        "video_url": null,
+        "created_at": "2015-01-07 17:47:17",
+        "updated_at": null
+    },
+    {
+        "id": 41,
+        "news_detail": "www.machinesdealer.com\r\n\r\nANTI-SPAM POLICY\r\n\r\n\r\nWhat is spam?\r\n\r\nIn the context of electronic messaging, spam refers to unsolicited, bulk or indiscriminate messages, typically sent for a commercial purpose.  \r\n\r\nMachines Dealer has a zero-tolerance spam policy. \r\n\r\nAutomated spam filtering\r\n\r\nMachines Dealer's messaging systems automatically scan all incoming email [and other] messages, and filter-out messages that appear to be spam.  \r\n\r\nProblems with spam filtering\r\n\r\nNo message filtering system is 100% accurate, and from time to time legitimate messages will be filtered-out by Machines Dealer\u2019s systems.  \r\n\r\nIf you believe this has happened to a message you have sent, please advise the message recipient by another means.\r\n\r\nYou can reduce the risk of a message being caught by the spam filters by sending the message in plain text (i.e. no HTML), removing any attachments, and ensuring that your messages are scanned for malware before dispatch.\r\n\r\n[User spam\r\n\r\nMachines Dealer may provide in future, a facility that enables users to send (email messages / private messages) to others. Users must not use this facility to send unsolicited, bulk or indiscriminate messages, whether or not for commercial purposes\r\n\r\n[Receipt of unwanted messages from Machines Dealer\r\n\r\nIn the unlikely event that you receive any message from Machines Dealer or sent using Machines Dealer\u2019s systems that may be considered to be spam, please contact Machines Dealer using the details below and the matter will be investigated.]\r\n\r\nChanges to this anti-spam policy\r\n\r\nMachines Dealer may amend this anti-spam policy at any time by publishing a new version on this website. \r\n\r\nContact us\r\n\r\nShould you have any questions about this anti-spam policy, please contact Machines Dealer using the details set out below:\r\n\r\nEmail : rahul@machinesdealer.com\r\n",
+        "year": "2008",
+        "month": "1",
+        "picture": "",
+        "video_url": null,
+        "created_at": "2016-04-04 19:21:14",
+        "updated_at": null
+    },
+    {
+        "id": 42,
+        "news_detail": "Machinesdealer @ INTER PRINT EXPO 2016 from 18th to 21st November.\r\nThe InterPrint Expo India took place in Chandigarh is a specialized fair around printing, packaging, digital and allied machinery industry.Taking in consideration the interest of Indian printers in used machinery, the so called Used Printing Machinery Forum (UPMF) will be organized during the fair.The location Ludhiana is centrally located and well connected with the other parts of the country.\r\nWe thank every one who visited our stall.",
+        "year": "2016",
+        "month": "11",
+        "picture": "mainp42.jpg",
+        "video_url": null,
+        "created_at": "2016-11-25 01:15:41",
+        "updated_at": null
+    },
+    {
+        "id": 43,
+        "news_detail": "MACHINESDEALER @ 13TH PRINTPACK India,  was a 5 day event being held from 4th February to the 8th February 2017 at the India Expo Centre and Mart in Greater Noida, India. This event showcases products like In-Press, Post press, finishing, converting, digital and signage and packaging machines, all under one roof etc. in the Packaging Materials, Printing & Publishing, Paper and Paper Products, Logistics & Transportation industries.",
+        "year": "2017",
+        "month": "2",
+        "picture": "",
+        "video_url": null,
+        "created_at": "2017-02-09 01:04:16",
+        "updated_at": null
+    },
+    {
+        "id": 55,
+        "news_detail": "Machinesdealer company will showcase high-tech printing, packaging and converting machines. We present innovative developments with novel solutions keeping in mind cost-effectiveness and time-saving in the production line on 1st February to 6th February 2019 at the India Expo Centre Greater Noida, India. Stall No. G10, Hall No.9.\r\n\r\n\r\n\r\n                                                                                                                \r\n         \r\nThis event will showcase products like Pre-Press, Post press, Offset press, Finishing, converting and packaging machines all under one roof in the Packaging Materials, Printing & Publishing and Paper Products.\r\nMachinesdealer welcomes all our well-wisher, business partners and print industrialist to our stall.\r\n",
+        "year": "2019",
+        "month": "1",
+        "picture": "68b3ecfe-05a0-4578-b43a-c065bdbe98b7.jpg",
+        "video_url": null,
+        "created_at": "2019-01-24 07:43:32",
+        "updated_at": null
+    },
+    {
+        "id": 57,
+        "news_detail": "Machinesdealer Company had successfully participated the 14th Print Pack India from 1st -6th February 2019 at the India Expo Centre Greater Noida; Company showcased products like Pre-Press, Post Press, and Offset Press Machines.\r\n\r\nMachinesdealer thanks to all our well-wisher, business partners and print industrialists and looking forward to work together in the days to come.\r\n",
+        "year": "2019",
+        "month": "2",
+        "picture": "Expo.jpeg",
+        "video_url": null,
+        "created_at": "2019-05-24 07:16:07",
+        "updated_at": null
+    },
+    {
+        "id": 58,
+        "news_detail": "MACHINESDEALER exhibition Chandigarh, India. January 2018. This event showcases products like In-Press, Post press, finishing, converting, digital and signage and packaging machines, all under one roof etc. in the Packaging Materials, Printing & Publishing, Paper and Paper Products, Logistics & Transportation industries.",
+        "year": "2018",
+        "month": "1",
+        "picture": "2018_Jan.jpeg",
+        "video_url": null,
+        "created_at": "2019-05-24 06:53:17",
+        "updated_at": null
+    },
+    {
+        "id": 59,
+        "news_detail": "Dear Partners,  \r\n\r\n                                             A Warm Diwali Wish for Every Happiness. May The Warmth and Splendor that are a Part Of this Auspicious Occasion, Fill Your Life With Happiness and Bright Cheer, Bring To You Joy and Prosperity, For The Whole Year.\r\n\r\nMay This Diwali Bring Prosperity To Your Business and More Opportunities for Us To Work Together!\r\n\r\n\r\nRegards\r\nMachinesdealer",
+        "year": "2019",
+        "month": "10",
+        "picture": "Diwali_1000.jpg",
+        "video_url": null,
+        "created_at": "2019-10-26 02:17:07",
+        "updated_at": null
+    },
+    {
+        "id": 61,
+        "news_detail": "Machinesdealer stall at PAMEX, Mumbai",
+        "year": "2020",
+        "month": "2",
+        "picture": "Pamex.JPG",
+        "video_url": null,
+        "created_at": "2020-01-08 00:07:58",
+        "updated_at": "2023-05-31 16:06:54"
+    },
+    {
+        "id": 73,
+        "news_detail": "We welcomes all our well-wisher, business partners and print industrialist to our stall.",
+        "year": "2022",
+        "month": "MAY",
+        "picture": "1652437601.jpeg",
+        "video_url": null,
+        "created_at": "2022-05-13 15:26:41",
+        "updated_at": "2022-05-13 15:26:41"
+    },
+    {
+        "id": 74,
+        "news_detail": "\"If We Met At Our Stall  15th PrintPack India,26-30 May 2022,  It Was a Pleasure Meeting You,\r\nIf You Couldn't Make It This Time, We Would Love To See You Next Time Around .",
+        "year": "2022",
+        "month": "JUNE",
+        "picture": "1654147075.jpeg",
+        "video_url": null,
+        "created_at": "2022-06-02 10:17:55",
+        "updated_at": "2022-06-02 10:22:17"
+    },
+    {
+        "id": 75,
+        "news_detail": "Our Company had participated the 3rd Edition NEPAL 5P International Exhibition on Printing & Allied Machinery Industries, Kathmandu.\r\nDate: 24 - 26 March,2023\r\nLocation: BHRIKUTIMANDAP,KATHMANDU, NEPAL.\r\nOur Booth: Hall No A, Stall L-56",
+        "year": "2023",
+        "month": "March",
+        "picture": "1680009045.jpeg",
+        "video_url": null,
+        "created_at": "2023-03-28 18:10:45",
+        "updated_at": "2024-10-08 06:22:07"
+    },
+    {
+        "id": 78,
+        "news_detail": "We are proud to share that our company  participated in the 16th PRINTPACK INDIA 2025, one of Asia\u2019s premier exhibitions for the printing and packaging industry.\r\n\r\nEvent Summary\r\nExhibition Name: PRINTPACK INDIA 2025\r\nDates: 1st \u2013 5th February 2025\r\nVenue: India Expo Centre & Mart, Greater Noida, Delhi NCR, India\r\nOur Booth: Hall No. 14, Stall J-34\r\n\r\nThe event was a great success and provided an excellent platform to showcase our latest offset printing machines and interact with industry professionals, partners, and customers. We thank everyone who visited our booth and look forward to continuing our journey of innovation and excellence in the printing industry.",
+        "year": "2025",
+        "month": "February",
+        "picture": "1748512757.jpg",
+        "video_url": null,
+        "created_at": "2025-05-26 23:38:11",
+        "updated_at": "2026-01-15 00:24:19"
+    }
+]

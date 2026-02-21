@@ -1,0 +1,52 @@
+[
+    {
+        "id": 10,
+        "name": "Sunny Batra",
+        "position": "1",
+        "title": "Director Of The Company",
+        "location": "Delhi",
+        "image": "1363263121image.jpg",
+        "picture": null,
+        "created_at": "2021-08-17 01:29:51"
+    },
+    {
+        "id": 11,
+        "name": "Harpreet Singh Kohli",
+        "position": "2",
+        "title": "Senior Sales Manager",
+        "location": "Refurbished offset",
+        "image": "A.JPG",
+        "picture": null,
+        "created_at": null
+    },
+    {
+        "id": 12,
+        "name": "Bunny Ahuja",
+        "position": "3",
+        "title": "Sales Manager",
+        "location": "Mundka, Delhi",
+        "image": "1751526214.png",
+        "picture": "2025-07-03 01:27:15",
+        "created_at": "2025-07-03 01:52:57"
+    },
+    {
+        "id": 1771208628269,
+        "name": "TestStaff",
+        "title": "TestTitle",
+        "contact": "",
+        "location": "",
+        "image": "",
+        "created_at": "2026-02-16T02:23:48.269Z",
+        "updated_at": "2026-02-16T02:23:48.269Z"
+    },
+    {
+        "id": 1771208724471,
+        "name": "TestStaff",
+        "title": "TestTitle",
+        "contact": "",
+        "location": "",
+        "image": "",
+        "created_at": "2026-02-16T02:25:24.471Z",
+        "updated_at": "2026-02-16T02:25:24.471Z"
+    }
+]

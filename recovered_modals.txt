@@ -1,0 +1,150 @@
+--- START admin-modal ---
+<div id="admin-modal" class="modal">
+        <div class="glass modal-content">
+            <h2 id="modal-title" style="margin-bottom: var(--s-6);">Management</h2>
+            <form id="machine-form" onsubmit="window.adminManager.saveMachine(event)">
+                <input type="hidden" id="machine-id">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4);">
+                    <div class="form-group">
+                        <label
+                            style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 4px;">Brand</label>
+                        <input type="text" id="form-brand" class="form-input">
+                    </div>
+
+                    
+                        </div>
+
+                        <div
+                            style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--s-6); margin-bottom: var(--s-6);">
+                            <div class="glass" style="padding: var(--s-6); height: 400px;">
+                                <h3 style="margin-bottom: var(--s-4);">Market Momentum</h3>
+                                <canvas id="chart-main"></canvas>
+                            </div>
+                            <div class="glass" style="padding: var(--s-6);">
+                                <h3 style="margin-bottom: var(--s-4);">Top Categories</h3>
+                                <canvas id="chart-category"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="glass" style="padding: var(--s-6);">
+                            <h3 style="margin-bottom: var(--s-4);">Asset Distribution by Brand</h3>
+                            <div style="height: 300px;">
+                                <canvas id="chart-brands"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label
+                            style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 4px;">Model</label>
+                        <input type="text" id="form-model" class="form-input">
+                    </div>
+
+                    
+                        </div>
+--- END admin-modal ---
+
+--- START news-modal ---
+<div id="news-modal" class="modal">
+        <div class="glass modal-content">
+            <h2 id="news-modal-title" style="margin-bottom: var(--s-6);">News Management</h2>
+            <form id="news-form" onsubmit="window.adminManager.saveNews(event)">
+                <input type="hidden" id="news-id">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4);">
+                    <div class="form-group">
+                        <label
+                            style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 4px;">Year</label>
+                        <input type="number" id="news-year" class="form-input">
+                    </div>
+
+                    
+                        </div>
+
+                        <div
+                            style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--s-6); margin-bottom: var(--s-6);">
+                            <div class="glass" style="padding: var(--s-6); height: 400px;">
+                                <h3 style="margin-bottom: var(--s-4);">Market Momentum</h3>
+                                <canvas id="chart-main"></canvas>
+                            </div>
+                            <div class="glass" style="padding: var(--s-6);">
+                                <h3 style="margin-bottom: var(--s-4);">Top Categories</h3>
+                                <canvas id="chart-category"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="glass" style="padding: var(--s-6);">
+                            <h3 style="margin-bottom: var(--s-4);">Asset Distribution by Brand</h3>
+                            <div style="height: 300px;">
+                                <canvas id="chart-brands"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label
+                            style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 4px;">Month</label>
+                        <input type="text" id="news-month" class="form-input">
+                    </div>
+
+                    
+                        </div>
+--- END news-modal ---
+
+--- START blog-modal ---
+Could not find blog-modal
+--- END blog-modal ---
+
+--- START video-modal ---
+Could not find video-modal
+--- END video-modal ---
+
+--- START staff-modal ---
+<div id="staff-modal" class="modal">
+        <div class="glass modal-content">
+            <h2 id="staff-modal-title" style="margin-bottom: var(--s-6);">Staff Member</h2>
+            <form id="staff-form" onsubmit="window.adminManager.saveStaffMember(event)">
+                <input type="hidden" id="staff-id">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4);">
+                    <div class="form-group">
+                        <label
+                            style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 4px;">Name</label>
+                        <input type="text" id="staff-name" class="form-input" required>
+                    </div>
+
+                    
+                        </div>
+
+                        <div
+                            style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--s-6); margin-bottom: var(--s-6);">
+                            <div class="glass" style="padding: var(--s-6); height: 400px;">
+                                <h3 style="margin-bottom: var(--s-4);">Market Momentum</h3>
+                                <canvas id="chart-main"></canvas>
+                            </div>
+                            <div class="glass" style="padding: var(--s-6);">
+                                <h3 style="margin-bottom: var(--s-4);">Top Categories</h3>
+                                <canvas id="chart-category"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="glass" style="padding: var(--s-6);">
+                            <h3 style="margin-bottom: var(--s-4);">Asset Distribution by Brand</h3>
+                            <div style="height: 300px;">
+                                <canvas id="chart-brands"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label
+                            style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 4px;">Job
+                            Title</label>
+                        <input type="text" id="staff-title" class="form-input" required>
+                    </div>
+
+                    
+                        </div>
+--- END staff-modal ---
+

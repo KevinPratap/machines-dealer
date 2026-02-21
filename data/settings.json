@@ -1,0 +1,54 @@
+{
+    "site_identity": {
+        "name": "MACHINES DEALER",
+        "title": "Machines Dealer | Used Heidelberg & Offset Printing Machines",
+        "description": "India's largest supplier of used Heidelberg and offset printing machines since 1988. Quality machinery for your printing needs.",
+        "logo_text": "MACHINES",
+        "logo_accent": "DEALER"
+    },
+    "contact": {
+        "phone_1": "+91 9811795787",
+        "phone_1_label": "Consultancy",
+        "phone_2": "+91 9910599566",
+        "phone_2_label": "Sales",
+        "email": "sales@machinesdealer.com",
+        "address": "Plot No. 12, Mundka Industrial Area, Delhi",
+        "whatsapp": "919811795787"
+    },
+    "social": {
+        "facebook": "#",
+        "instagram": "https://www.instagram.com/",
+        "linkedin": "#",
+        "youtube": "#"
+    },
+    "hero": {
+        "headline_main": "Global Machinery",
+        "headline_accent": "Experts",
+        "subheadline": "Connecting India to the global market since 1988. We are the largest supplier of used Heidelberg machines, delivering precision and reliability to your printing house.",
+        "btn_primary_text": "Browse Stock",
+        "btn_primary_link": "#machines",
+        "btn_secondary_text": "Our History",
+        "btn_secondary_link": "#about"
+    },
+    "stats": [
+        {
+            "value": "35+",
+            "label": "Years Experience",
+            "color": "var(--accent-primary)"
+        },
+        {
+            "value": "1k+",
+            "label": "Machines Sold",
+            "color": "var(--accent-secondary)"
+        }
+    ],
+    "marquee_brands": [
+        "HEIDELBERG",
+        "KOMORI",
+        "BOBST",
+        "POLAR",
+        "STAHL",
+        "MULLER MARTINI",
+        "KBA"
+    ]
+}

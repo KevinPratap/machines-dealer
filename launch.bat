@@ -1,0 +1,3 @@
+@echo off
+echo Starting premium local environment...
+python scripts/dev-server.py

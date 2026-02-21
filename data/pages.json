@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "title": "About Us",
+        "slug": "about-us",
+        "image": "about_header.jpg",
+        "heading": "Our Legacy of Excellence",
+        "body": "<p>Machinesdealer is an expert second hand offset printing Machine importer which connects India to the world. We, at Machinesdealer, offer high-quality Machine with a clear vision to help your company grow. The foundations of the company are created by foresight. We have vivid activities and interests that help us reach great levels of success. Our goal is to gain customer satisfaction by providing them with printing machines in the best possible condition, that too without any hassle.</p><p>Our office is located in New Delhi. We have been dedicatedly importing second hand Machine since 1988. With our expertise and many years of importing, we have mastered the art of providing robust services to our clients. We offer Machine to different printing houses in India which need to import the Machine under their own name from abroad on a direct basis.</p><h3>What Defines Us</h3><ul><li>Our sales list comprises of only those names that could be required by printing houses in India. Our warehouses are spread across New Delhi. For inspection of the Machine in our warehouses, kindly raise a request beforehand so that we can arrange for the same. That way, you can check out the Machine well in time to make an informed decision.</li><li>Our team of experts is committed to providing the best services, and we are gradually moving towards the road of many more accolades because of our efforts. Moreover, we work seamlessly towards enhancing the experience of our customers.</li><li>We provide the required products, with no compromises are made these products as each little detail has been taken care of by our well-trained team.</li><li>Machinesdealer works towards providing a range of products that cater to the different requirements of printing houses in India. Hence, there are lot of options that printing houses can choose from, like machine type, colour, etc. in order to make the right choice for your business.</li></ul><h3>Our Philosophy</h3><p>We follow a core value i.e. strong business ethics, and work tirelessly towards customer satisfaction. Furthermore, we believe that customer happiness is of supreme value, therefore, at Machinesdealer, we leave no stone unturned in providing the best products and services to them. We always go the extra mile in forging a good relationship with our customers and want it to last for a lifetime.</p>",
+        "status": 1,
+        "created_at": "2026-02-14 11:30:00",
+        "updated_at": "2026-02-14 11:30:00"
+    },
+    {
+        "id": 2,
+        "title": "Company Structure",
+        "slug": "company-structure",
+        "image": "team_header.jpg",
+        "heading": "Our Expert Leadership",
+        "body": "<p>Meet the visionary leaders driving excellence at Machines Dealer. Our team combines decades of industry experience with a passion for innovation in the printing machinery sector.</p>",
+        "status": 1,
+        "created_at": "2026-02-14 11:30:00",
+        "updated_at": "2026-02-14 11:30:00"
+    }
+]

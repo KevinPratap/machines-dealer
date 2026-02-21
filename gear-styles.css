@@ -1,0 +1,48 @@
+/* Background Gears */
+.bg-gear-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.gear-pair {
+    position: absolute;
+    will-change: transform;
+}
+
+.gear-top-left {
+    top: -15%;
+    left: -15%;
+    width: 600px;
+    height: 600px;
+}
+
+.gear-bottom-right {
+    bottom: -15%;
+    right: -15%;
+    width: 500px;
+    height: 500px;
+}
+
+.gear-main {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .gear-top-left {
+        width: 400px;
+        height: 400px;
+    }
+
+    .gear-bottom-right {
+        width: 350px;
+        height: 350px;
+    }
+}
